@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- configuration de style et media queries -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+    <!-- intégration des fortawesone -->
+    <script src="https://kit.fontawesome.com/1a438f9cf9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!-- Intégration de la police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Booki</title>
+    <meta name="description" content="Rechercher votre prochain lieu de vacances hébergement et activités compris"/>
+</head>
+<body>
+    <!-- **************** -->
+    <!--    header + nav  -->
+    <!-- **************** -->
+
+    <header >
+        <div class="flex flex-between" id="top">
+            <img src="./images/logo/Booki@3x.png" id="logo" alt="Logo booki"/>
+            <nav>
+                <ul class="flex" id="topNav">
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- **************** -->
+    <!-- end header + nav -->
+    <!-- **************** -->
+
+    <!-- **************** -->
+    <!-- main -->
+    <!-- **************** -->
+
+    <main>
+        <div>
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</p>
+        </div>
+        
+        <!-- Section recherche -->
+        <div>
+            <form action="#">
+                <div>
+                    <i class="bgTertiary fa-solid fa-location-dot icon"></i> <!--icon map-->
+                <input type="text" name="search" id="search" required>
+                <button class="btn btnSearch">
+                    <span>Rechercher</span> 
+                    <i class="fa-solid fa-search"></i> 
+                </button>
+                </div>
+            </form>
+        </div>
+    
+        <div>
+            <label for="">Filtres</label>
+            <button class="btn"><i class="circle bgcolorPrimary colorPrimary fa-solid fa-money-bill-wave"></i>Économique</button>
+            <button class="btn"><i class="colorPrimary fa-solid fa-child"></i>Familial</button>
+            <button class="btn"><i class="colorPrimary fa-solid fa-heart"></i>Romantique</button>
+            <button class="btn"><i class="colorPrimary fa-solid fa-dog"></i>Animaux autorisés</button>
+        </div>
+    
+        <p><i class="circle circleBgWhite colorPrimary fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+    
+        <i class="fas fa-chart-line mostPopular__titleIcon"></i>
+        <i class="colorPrimary fa-solid fa-star"></i> <!--ok-->
+        <i class="colorTertiary fa-solid fa-star"></i> <!--ok-->
+        
+        <i class="fa-thin fa-star-sharp"></i>
+    
+    
+        <!--  footer -->
+        <footer class="flex bgTertiary">
+            <div class="flex flex-dir-col">
+                <h2>A propos</h2>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div class="flex flex-dir-col">
+                <h2>Nos hébergements</h2>
+                <a href="#">Charte Qualité</a>
+                <a href="#">Soumettre votre hôtel</a>
+            </div>
+            <div class="flex flex-dir-col">
+                <h2>Assistance</h2>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
