@@ -3,6 +3,9 @@
     --colorSecondary: #DEEBFF;
     --colorTertiary: #F2F2F2;
     --colorWhite: #FFFFFF;
+    --colorBlack:#000000;
+    /* Radius */
+    --radiusSearch: 15px;
 
 }
 /* padding: 29px 20px 50px 20px  */
@@ -51,5 +54,49 @@
     }
     #topNav>li>a:hover {
         color: var(--colorPrimary);
+    }
+    /* ***** */
+    /* main */
+    /* ***** */
+    #title{
+        padding: 10px 20px 10px 20px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 16px;
+    }
+    /* DIV search */
+    #form{
+        padding: 10px 20px 10px 20px;
+        height: 48px;
+        position: relative;
+    }
+    .icon{
+        padding: 16px 18px;
+    }
+    #inputSearch{
+        border-radius:var(--radiusSearch);
+        padding-left:70px;
+        width: 100%;
+        height: 48px;
+    }
+
+    /* boutton */
+    .btnSearch{
+        position:absolute;
+        right: 20px;
+        border-top-left-radius: var(--radiusSearch);
+        border-bottom-left-radius: var(--radiusSearch);
+        width: 48px;
+        height: 48px;
+    }
+    .btnSearch>i{
+        color:var(--colorWhite);
+        display: block;
+    }
+    .btnSearch>span{
+        display: none;
     }
 }

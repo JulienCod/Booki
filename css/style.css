@@ -1,9 +1,12 @@
 :root{
+    /* Color */
     --colorPrimary: #0065FC;
     --colorSecondary: #DEEBFF;
     --colorTertiary: #F2F2F2;
     --colorWhite: #FFFFFF;
-
+    --colorBlack:#000000;
+    /* Radius */
+    --radiusSearch: 15px;
 }
 * {
     box-sizing: border-box;
@@ -24,7 +27,7 @@ main{
     padding:48px 51px 0px 51px;
 }
 p, a{
-    font-size: 12px;
+    font-size: 18px;
 }
 
 /* Couleur utilisée */
@@ -74,18 +77,18 @@ p, a{
 }
 /* logo */
 #logo{
-    height: 33px;
+    height: 50px;
 }
 /* navigation */
 #topNav>li{
     list-style: none;    
     width: 174px;
-    padding-top: 50px;
+    padding-top: 47px;
 }
 #topNav>li:hover{
     border-top:2px solid var(--colorPrimary);
     color:var(--colorPrimary);
-    padding-top:48px;
+    padding-top:45px;
 }
 #topNav>li:hover a{
     color: var(--colorPrimary);
@@ -93,16 +96,46 @@ p, a{
 ul{
     padding:0;
 }
-/* lien */
 a{
     text-decoration: none;
-    color: black;
+    color: var(--colorBlack);
 }
+/* ***** */
 /* main */
+/* ***** */
+
 h1{
-    font-size: 16px;
+    font-size: 24px;
     margin:0;
 }
+/* DIV search */
+#form{
+    height: 64px;
+    position: relative;
+    
+}
+.icon{
+    position: absolute;
+    padding: 24px 26px;
+    border-top-left-radius: var(--radiusSearch);
+    border-bottom-left-radius: var(--radiusSearch);
+}
+#inputSearch{
+    position: static;
+    border:2px solid var(--colorTertiary);
+    border-radius:var(--radiusSearch);
+    padding-left:80px;
+    width: 370px;
+    height: 64px;
+    
+    font-size: 20px;
+    font-weight:bold;
+}
+#inputSearch::placeholder{
+    color: var(--colorBlack);
+    opacity: 1;
+}
+
 /* boutton */
 .btn{
     border: 2px solid var(--colorSecondary);
@@ -110,10 +143,16 @@ h1{
     border-radius: 30px;
 }
 .btnSearch{
+    position: relative;
+    right: 50px;
     background-color: var(--colorPrimary);
     color: var(--colorWhite);
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
+    border-radius: 0px;
+    border-bottom-right-radius: var(--radiusSearch);
+    border-top-right-radius: var(--radiusSearch);
+    width: 150px;
+    height: 100%;
+    border: none;
 }
 .btnSearch>i{
     color:var(--colorSecondary);
@@ -129,9 +168,7 @@ h1{
     border: 2px solid var(--colorSecondary);
     background-color: var(--colorSecondary);
 }
-.icon{
-    padding: 22px;
-}
+
 
 footer div{
     padding:51px;
