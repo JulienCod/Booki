@@ -7,18 +7,25 @@
 }
 * {
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
    /* box-sizing est appliqué à tous les éléments */
 }
-/* Propriété générale dans le body */
+/* Propriété Principaux */
 body{
     max-width: 1440px;
-    font-family: 'Raleway', sans-serif;
+    height: auto;
     margin:auto;
+    /* border:1px solid orange; */
 }
-
-/* ********** */
-/* Setup */
-/* ********** */
+header{
+    padding: 51px 51px 0px 51px;
+}
+main{
+    padding:48px 51px 0px 51px;
+}
+p, a{
+    font-size: 12px;
+}
 
 /* Couleur utilisée */
 .colorPrimary{
@@ -55,30 +62,46 @@ body{
 /* ********** */
 /* End Setup */
 /* ********** */
+
+/* header */
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    height: 33px;
+    align-items: end;
+    text-align: center;
+}
 /* logo */
 #logo{
-    height: 62px;
-    align-items: center;
+    height: 33px;
 }
 /* navigation */
 #topNav>li{
     list-style: none;    
-    padding: 40px;
+    width: 174px;
+    padding-top: 50px;
 }
-#topNav>li>a{
-    padding: 40px;
-}
-/* #topNav>li:hover{
-    color:#0065FC;
-} */
-#topNav>li>a:hover{
+#topNav>li:hover{
     border-top:2px solid var(--colorPrimary);
     color:var(--colorPrimary);
+    padding-top:48px;
+}
+#topNav>li:hover a{
+    color: var(--colorPrimary);
+}
+ul{
+    padding:0;
 }
 /* lien */
 a{
     text-decoration: none;
     color: black;
+}
+/* main */
+h1{
+    font-size: 16px;
+    margin:0;
 }
 /* boutton */
 .btn{
@@ -108,4 +131,8 @@ a{
 }
 .icon{
     padding: 22px;
+}
+
+footer div{
+    padding:51px;
 }
