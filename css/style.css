@@ -1,3 +1,5 @@
+            /* Variable */
+
 :root{
     /* Color */
     --colorPrimary: #0065FC;
@@ -7,66 +9,72 @@
     --colorBlack:#000000;
     /* Radius */
     --radiusSearch: 15px;
+    --radiusFiltre: 25px;
+    /* font-size */
+    --fSh1: 20px ;
+    --fSh2: 16px;
+    --fSText: 15px ;
 }
+
+/* box-sizing et font-family est appliqué à tous les éléments */
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-   /* box-sizing est appliqué à tous les éléments */
 }
-/* Propriété Principaux */
+
+            /* ******************** */
+            /* Propriété Principaux */
+            /* ******************** */
+
 body{
     max-width: 1440px;
-    height: auto;
     margin:auto;
     /* border:1px solid orange; */
 }
+
 header{
-    padding: 51px 51px 0px 51px;
-}
-main{
-    padding:48px 51px 0px 51px;
-}
-p, a{
-    font-size: 18px;
+    padding: 40px 40px 0px 40px;
 }
 
-/* Couleur utilisée */
-.colorPrimary{
-    color: var(--colorPrimary);
+main{
+    padding:48px 40px 0px 40px;
 }
-.colorSecondary{
-    color: var(--colorSecondary);
+
+p, a{
+    font-size: var(--fSText);
 }
-.colorTertiary{
-    color: var(--colorTertiary)
-}
-.bgSecondary{
-    background-color: var(--colorSecondary);
-}
-.bgTertiary{
-    background-color: var(--colorTertiary);
-}
-/* Proriété flexbox utilisée */
+
+            /* ************************* */
+            /* Proriété flexbox utilisée */
+            /* ************************* */
+
 .flex{
     display: flex;
 }
+
 .flex-between{
     justify-content: space-between;
 }
+
 .flex-around{
     justify-content: space-around;
 }
+
 .flex-start{
     justify-content: flex-start;
 }
+
 .flex-dir-col{
     flex-direction: column;
 }
-/* ********** */
-/* End Setup */
-/* ********** */
 
-/* header */
+        /* ******************* */
+        /* *****End Setup***** */
+        /* ******************* */
+
+        /* **************** */
+        /* *****header***** */
+        /* **************** */
 
 #top{
     display: flex;
@@ -75,95 +83,180 @@ p, a{
     align-items: end;
     text-align: center;
 }
-/* logo */
+
+            /* **** */
+            /* logo */
+            /* **** */
+
 #logo{
     height: 50px;
 }
-/* navigation */
+
+            /* ********** */
+            /* navigation */
+            /* ********** */
+
 #topNav>li{
     list-style: none;    
     width: 174px;
     padding-top: 47px;
 }
+
 #topNav>li:hover{
     border-top:2px solid var(--colorPrimary);
     color:var(--colorPrimary);
     padding-top:45px;
 }
+
 #topNav>li:hover a{
     color: var(--colorPrimary);
 }
+
 ul{
     padding:0;
 }
+
 a{
     text-decoration: none;
     color: var(--colorBlack);
 }
-/* ***** */
-/* main */
-/* ***** */
+        /* ******************** */
+        /* *****End header***** */
+        /* ******************** */  
+
+        /* ************** */
+        /* *****main***** */
+        /* ************** */
 
 h1{
-    font-size: 24px;
+    font-size: var(--fSh1);
     margin:0;
 }
-/* DIV search */
+
+            /* ********** */
+            /* form search */
+            /* ********** */
 #form{
-    height: 64px;
-    position: relative;
+    height: 55px;
+    position: static;
+    align-items: center;
     
 }
-.icon{
+
+.iconSearch{
     position: absolute;
-    padding: 24px 26px;
+    height: 55px;
+    width: 55px;
+    padding: 19px 21px ;
     border-top-left-radius: var(--radiusSearch);
     border-bottom-left-radius: var(--radiusSearch);
+    background-color: var(--colorTertiary);
+
 }
+
 #inputSearch{
     position: static;
     border:2px solid var(--colorTertiary);
     border-radius:var(--radiusSearch);
-    padding-left:80px;
-    width: 370px;
-    height: 64px;
+    padding-left:70px;
+    width: 310px;
+    height: 55px;
     
-    font-size: 20px;
+    font-size: var(--fSh2);
     font-weight:bold;
 }
+
 #inputSearch::placeholder{
     color: var(--colorBlack);
     opacity: 1;
 }
 
-/* boutton */
-.btn{
-    border: 2px solid var(--colorSecondary);
-    background-color: var(--colorWhite);
-    border-radius: 30px;
-}
+            /* ************* */
+            /* button search */
+            /* ************* */
+
 .btnSearch{
     position: relative;
     right: 50px;
+    line-height: 0px;
     background-color: var(--colorPrimary);
     color: var(--colorWhite);
     border-radius: 0px;
     border-bottom-right-radius: var(--radiusSearch);
     border-top-right-radius: var(--radiusSearch);
-    width: 150px;
+    width: 125px;
     height: 100%;
     border: none;
+    font-weight: bold;
+    font-size: var(--fSh2);
 }
+
 .btnSearch>i{
     color:var(--colorSecondary);
     display: none;
 }
-/* icon */
-.circle{
-    border-radius: 100%;
-    background-color: red;
+        /* ******************** */
+        /* *****DIV filtre***** */
+        /* ******************** */
 
+#groupes-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 40px;
+    align-items: center;
+    margin-top: 30px;
+    
 }
+#groupes-list>h2{
+    margin:0 ;
+    font-size: var(--fSh2);
+}
+#filter-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.filter{
+    display: flex;
+    width: auto;
+    align-items: center;
+    border: 2px solid var(--colorTertiary);
+    background-color: var(--colorWhite);
+    border-radius: var(--radiusFiltre);
+    height: 50px;
+    transition: all 100ms ease-in-out;
+}
+.filter>span{
+    font-weight: bold;
+    margin-right: 5px;
+    padding:15px;
+    font-size: var(--fSh2);
+}
+.filter:hover{
+    background-color: var(--colorSecondary);
+    transform: scale(1.02);
+}
+            /* **** */
+            /* icon */
+            /* **** */
+            
+.iconFilter{
+    color: var(--colorPrimary);
+    background-color: var(--colorSecondary);
+    padding:17px ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left:-2px;
+    margin-top: -2px;
+}
+
+            /* ************* */
+            /* Button filtre */
+            /* ************* */
+
+
 .circleBgWhite{
     border: 2px solid var(--colorSecondary);
     background-color: var(--colorSecondary);

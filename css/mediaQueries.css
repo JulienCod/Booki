@@ -8,28 +8,67 @@
     --radiusSearch: 15px;
 
 }
+
 /* padding: 29px 20px 50px 20px  */
+
+            /* **************** */
+            /* Version tablette */
+            /* **************** */
+
 @media screen and (max-width:991px) and (min-width: 768px) {
     body{background-color: orange;}
+    header{
+        padding: 20px 10px 0px 10px;
+    }
+    
+    main{
+        padding:20px 10px 0px 10px;
+    }
+    #groupes-list>h2{
+        margin-right:170px ;
+    }
+    #groupes-list{
+        gap: 10px;
+    }
+    #filter-list{
+        gap: 10px;
+        
+    }
+    .filter>span{
+        margin-right: 3px;
+        padding:13px;
+        font-size: var(--fSh2);
+    }
 }
+
+            /* ************** */
+            /* Version Mobile */
+            /* ************** */
+
 @media screen and (max-width: 767px ) {
+
     body{
         border: 1px solid red;
         
     }
+
     header{
         padding: 0;
         border: 1px solid yellow;
     }
+
     main{
         padding: 0;
         border: 1px solid green;
     }
+            /* ****** */
+            /* header */
+            /* ****** */
 
-    /* header */
     nav, nav>ul>li{
         width:100%;
     }
+
     #top{
         display: flex;
         flex-direction: column;
@@ -45,6 +84,7 @@
         padding-bottom: 14px;
         border-bottom: 2px solid var(--colorTertiary);
     }
+
     #topNav>li:hover {
         border-top: none;
         border-bottom: 2px solid var(--colorPrimary);
@@ -52,38 +92,52 @@
         padding-bottom: 12px;
         padding-top: 0px;
     }
+
     #topNav>li>a:hover {
         color: var(--colorPrimary);
     }
+
     /* ***** */
     /* main */
     /* ***** */
+
     #title{
         padding: 10px 20px 10px 20px;
     }
+
     h1{
         font-size: 22px;
     }
+
     p{
         font-size: 16px;
     }
-    /* DIV search */
+
+            /* ********** */
+            /* form search */
+            /* ********** */
+
     #form{
         padding: 10px 20px 10px 20px;
         height: 48px;
-        position: relative;
     }
-    .icon{
+    
+    .iconSearch{
+        height: 48px;
+        width: 48px;
         padding: 16px 18px;
     }
+
     #inputSearch{
-        border-radius:var(--radiusSearch);
         padding-left:70px;
         width: 100%;
         height: 48px;
     }
 
-    /* boutton */
+            /* ************* */
+            /* button search */
+            /* ************* */
+
     .btnSearch{
         position:absolute;
         right: 20px;
@@ -92,11 +146,48 @@
         width: 48px;
         height: 48px;
     }
+
     .btnSearch>i{
         color:var(--colorWhite);
         display: block;
     }
+
     .btnSearch>span{
         display: none;
+    }
+
+        /* ******************** */
+        /* *****DIV filtre***** */
+        /* ******************** */
+    /* #filter-list h2{
+        padding-right:100px;
+    } */
+    #groupes-list{
+        padding: 0px 20px;
+    }
+    #filter-list{
+        margin-top: 0px;
+    }
+    .filter>span{
+        font-weight: bold;
+        text-align: center;
+        margin-right: 3px;
+        padding:8px;
+        font-size: 18px;
+    }
+
+                /* **** */
+                /* icon */
+                /* **** */
+                
+    .iconFilter{
+        color: var(--colorPrimary);
+        background-color: var(--colorSecondary);
+        padding:17px ;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left:-5px;
+        margin-top: -2px;
     }
 }

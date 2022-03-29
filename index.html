@@ -42,15 +42,20 @@
     <!-- **************** -->
 
     <main>
+        <!-- title -->
+
         <div id="title">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
         
-        
+        <!-- formulaire -->
+
         <div>
             <form action="#" id="form">
-                <i class="bgTertiary fa-solid fa-location-dot icon"></i> 
+                <label for="icon location">
+                    <i class="fa-solid fa-location-dot iconSearch"></i> 
+                </label>
                 <input type="search" placeholder="Marseille, France" name="search" id="inputSearch" required>
                 <button class="btnSearch">
                     <span>Rechercher</span> 
@@ -58,18 +63,43 @@
                 </button>
             </form>
         </div>
+
+        <!-- filtre -->
     
-        <!-- <div>
-            <label for="">Filtres</label>
-            <button class="btn"><i class="circle bgcolorPrimary colorPrimary fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button class="btn"><i class="colorPrimary fa-solid fa-child"></i>Familial</button>
-            <button class="btn"><i class="colorPrimary fa-solid fa-heart"></i>Romantique</button>
-            <button class="btn"><i class="colorPrimary fa-solid fa-dog"></i>Animaux autorisés</button>
+        <div id="groupes-list">
+            <h2>Filtres</h2>
+            <div id="filter-list">
+                <div class="filter">
+                    <i class="iconFilter fa-solid fa-money-bill-wave"></i>
+                    <span>
+                        Économique
+                    </span> 
+                </div>
+                <div class="filter">
+                    <i class="iconFilter fa-solid fa-child-reaching"></i>
+                    
+                    <span>
+                        Familial
+                    </span> 
+                </div>
+                <div class="filter">
+                    <i class="iconFilter fa-solid fa-heart"></i>
+                    <span>
+                        Romantique
+                    </span> 
+                </div>
+                <div class="filter">
+                    <i class="iconFilter fa-solid fa-dog"></i>
+                    <span>
+                        Animaux autorisés
+                    </span> 
+                </div>
+            </div>
         </div>
     
-        <p><i class="circle circleBgWhite colorPrimary fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <!-- <p><i class="circle circleBgWhite colorPrimary fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     
-        <i class="fas fa-chart-line mostPopular__titleIcon"></i>
+        <i class="fas fa-chart-line"></i>
         <i class="colorPrimary fa-solid fa-star"></i> 
         <i class="colorTertiary fa-solid fa-star"></i> 
         
