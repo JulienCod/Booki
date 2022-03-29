@@ -190,4 +190,13 @@
         margin-left:-5px;
         margin-top: -2px;
     }
+
+                /* ******** */
+                /* DIV info */
+                /* ******** */
+
+    #info{
+    padding: 0px 20px 10px 20px;
+    align-items:baseline;
+    }
 }
