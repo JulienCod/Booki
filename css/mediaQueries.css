@@ -49,6 +49,30 @@
     .card:hover{
         transform: scale(1.02);
     }
+    #activity{
+        border-radius: 0;
+        background-color: var(--colorWhite);
+        padding:30px 0px 70px;
+        margin-top:10px;
+    }
+    #activity h2{
+        padding: 20px 0px;
+    }
+    #listActivity{
+        gap: 30px;
+    }
+    .cardActivity{
+        width: calc(25% - 30px / 4*3)
+    }
+    .cardActivity-md{
+        flex: 1 1 calc(60% - 30px * 2);
+    }
+    .cardActivity-sm{
+        flex: 1 1 calc(40% - 30px * 2);
+    }
+    .groupFooter {
+        padding: 1% 14% 4% 10px;
+    }
 }
 
             /* ************** */
@@ -215,16 +239,46 @@
     #hebergement{
         max-width: 100%;
         background-color: var(--colorWhite);
-        padding: 20px 10px;
+        padding: 20px 3%;
     }
     .listCard{
         flex-direction: column;
     }
     #populaire{
         border-radius: 0;
-        padding: 40px 10px;
+        padding: 40px 3%;
     }
     .card:hover{
         transform: scale(1.02);
+    }
+
+                /* ******** */
+                /* Activity */
+                /* ******** */
+
+    #activity{
+        border-radius: 0;
+        background-color: var(--colorWhite);
+        padding:3%;
+        margin-top:10px;
+    }
+    #activity h2{
+        padding: 20px 0px;
+    }
+    #listActivity{
+        height: auto;
+        width: auto;
+        padding-bottom: 25px;
+    }
+    
+    .cardActivity{
+        padding:0;
+        width: auto;
+    }    
+    footer{
+        flex-direction: column;
+    }
+    .groupFooter {
+        padding: 1% 14% 4% 3%;
     }
 }
