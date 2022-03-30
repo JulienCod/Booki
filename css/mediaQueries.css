@@ -39,6 +39,16 @@
         padding:13px;
         font-size: var(--fSh2);
     }
+    #splitSection{
+        flex-direction:column-reverse
+
+    }
+    #hebergement{
+        max-width: 100%;
+    }
+    .card:hover{
+        transform: scale(1.02);
+    }
 }
 
             /* ************** */
@@ -198,5 +208,23 @@
     #info{
     padding: 0px 20px 10px 20px;
     align-items:baseline;
+    }
+    #splitSection{
+        flex-direction:column-reverse
+    }
+    #hebergement{
+        max-width: 100%;
+        background-color: var(--colorWhite);
+        padding: 20px 10px;
+    }
+    .listCard{
+        flex-direction: column;
+    }
+    #populaire{
+        border-radius: 0;
+        padding: 40px 10px;
+    }
+    .card:hover{
+        transform: scale(1.02);
     }
 }

@@ -27,7 +27,7 @@
             <img src="./images/logo/Booki@3x.png" id="logo" alt="Logo booki"/>
             <nav>
                 <ul class="flex" id="topNav">
-                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#hebergement">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>
@@ -53,7 +53,7 @@
 
         <div>
             <form action="#" id="form">
-                <label for="icon location">
+                <label for="iconLocation">
                     <i class="fa-solid fa-location-dot iconSearch"></i> 
                 </label>
                 <input type="search" placeholder="Marseille, France" name="search" id="inputSearch" required>
@@ -103,14 +103,284 @@
             <i class="circleBgWhite colorPrimary fa-solid fa-info" id="iconInfo"></i>
             <p> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
+
+        <!-- split hébergements and popular -->
+
+        <div id="splitSection">
+
+            <!-- Section hébergement -->
+
+            <section class="groupeSection" id="hebergement">
+
+                <h2>Hébergements à Marseille</h2>
     
-        <!-- <i class="fas fa-chart-line"></i>
-        <i class="colorPrimary fa-solid fa-star"></i> 
-        <i class="colorTertiary fa-solid fa-star"></i> 
+                <div class="listCard" >
+                    
+                    <!-- card 1 -->
+
+                    <a href="#" class="card cardGridItem">
+                        <article class="cardBody">
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo du logement de l'auberge la cannebière">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Auberge La cannebière</h3>
+                                <p>Nuit à partir de <b>25€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+                            
+                        </article>
+                    </a>
+
+                    <!-- card 2 -->
+
+                    <a href="#" class="card cardGridItem">
+                        <article class="cardBody">
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo du logement de l'Hôtel du port">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52<b>€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </a>
+
+                    <!-- card 3 -->
+
+                    <a href="#" class="card cardGridItem">
+                        <article class="cardBody">
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo du logement de l'Hôtel Les mouettes">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76<b>€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </a>
+
+                    <!-- card 4 -->
+
+                    <a href="#" class="card cardGridItem">
+                        <article class="cardBody">
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo du logement de l'Hôtel de la mer">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46<b>€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </a>
+
+                    <!-- card 5 -->
+
+                    <a href="#" class="card cardGridItem">
+
+                        <article class="cardBody">
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo du logement de l'Auberge Le Panier">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de <b>23€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </a>
+
+                    <!-- card 6 -->
+
+                    <a href="#" class="card cardGridItem">
+                        <article class="cardBody" >
+
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo du logement de l'Hôtel chez Amina">
+                            </div>
+                            
+                            <div class="infoCard">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96<b>€</b></p>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+                            
+                            
+                        </article>
+                    </a>
+                    
+                </div>
+                
+                <a href="#" id="lien">Afficher plus</a>
+
+            </section>
+
+            <!-- section les plus populaires -->
+
+            <section class="groupeSection" id="populaire">
+
+                <!-- Title -->
+
+                <div id="titlePop">
+                    <h2>Les plus Populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <!-- list card populaire -->
+
+                <div class="listCard" id="listPop">
+
+                    <!-- card 1 -->
+
+                    <a href="#" class="card cardPop">
+
+                        <article class="cardBody">
+                            
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo du logement l'hôtel Le soleil du matin">
+                            </div>
+     
+                            <div class="infoCard">
+                                <div class="description">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128<b>€</b></p>
+                                </div>
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+    
+    
+                        </article>
+                    </a>
+
+                    <!-- card 2 -->
+
+                    <a href="#" class="card cardPop">
+
+                        <article class="cardBody">
+    
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo du logement Au coeur de l'eau chambres d'hôtes">
+                            </div>
+    
+                            
+                            
+                            <div class="infoCard">
+
+                                <div class="description">
+                                    <h3>Au coeur de l'eau chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71<b>€</b></p>
+                                </div>
         
-        <i class="fa-thin fa-star-sharp"></i> -->
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+                            </div>
+    
+                        </article>
+                    </a>
+
+                    <!-- card 3 -->
+
+                    <a href="#" class="card cardPop">
+                        <article class="cardBody">
+    
+                            <div class="containerImg">
+                                <img class="imgHebergement" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo du logement de l'hôtel Tout bleu et Blanc">
+                            </div>
+    
+                            <div class="infoCard">
+                                <div class="description">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68<b>€</b></p>
+                                </div>
+
+                                <div class="note">
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starBlue fa-solid fa-star"></i> 
+                                    <i class="starGray fa-solid fa-star"></i> 
+                                </div>
+
+                            </div>
     
     
+                        </article>
+
+                    </a>
+                </div>
+
+            </section>
+
+        </div>
+
     </main>
   
     <!--  footer -->
