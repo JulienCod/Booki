@@ -2,20 +2,29 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- configuration de style et media queries -->
+
+    <!-- css Style -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mediaQueries.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./images/logo/Booki.png" />
+
     <!-- intégration des fortawesone -->
     <script src="https://kit.fontawesome.com/1a438f9cf9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Intégration de la police d'écriture -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <title>Booki</title>
-    <meta name="description" content="Rechercher votre prochain lieu de vacances hébergement et activités compris"/>
+
+    <meta name="description" content="Rechercher votre prochain lieu de vacances"/>
 </head>
 <body>
         <!-- ************ -->
@@ -54,18 +63,18 @@
         
         <!-- form -->
 
-        <div>
-            <form action="#" id="form">
-                <label for="iconLocation">
-                    <i class="fa-solid fa-location-dot"></i> 
-                </label>
-                <input  type="search" placeholder="Marseille, France" name="search" id="inputSearch" required>
-                <button class="btnSearch">
-                    <span >Rechercher</span> 
-                    <i class="fa-solid fa-search"></i> 
-                </button>
-            </form>
-        </div>
+
+        <form action="#" id="form">
+            <label for="inputSearch">
+                <i class="fas fa-location-dot"></i> 
+            </label>
+            <input  type="text" placeholder="Marseille, France" name="search" id="inputSearch" required>
+            <button class="btnSearch" aria-label="Rechercher">
+                <span >Rechercher</span> 
+                <i class="fas fa-search"></i> 
+            </button>
+        </form>
+        
 
         <!-- end form -->
 
@@ -78,14 +87,14 @@
             <div id="filter-list">
 
                 <div class="filter">
-                    <i class="iconFilter fa-solid fa-money-bill-wave"></i>
+                    <i class="iconFilter fas fa-money-bill-wave"></i>
                     <span >
                         Économique
                     </span> 
                 </div>
 
                 <div class="filter">
-                    <i class="iconFilter fa-solid fa-child-reaching"></i>
+                    <i class="iconFilter fas fa-child-reaching"></i>
                     
                     <span >
                         Familial
@@ -93,14 +102,14 @@
                 </div>
 
                 <div class="filter">
-                    <i class="iconFilter fa-solid fa-heart"></i>
+                    <i class="iconFilter fas fa-heart"></i>
                     <span >
                         Romantique
                     </span> 
                 </div>
 
                 <div class="filter">
-                    <i class="iconFilter fa-solid fa-dog"></i>
+                    <i class="iconFilter fas fa-dog"></i>
                     <span >
                         Animaux autorisés
                     </span> 
@@ -114,7 +123,7 @@
         <!-- info -->
 
         <div id="info">
-            <i class="colorPrimary fa-solid fa-info" id="iconInfo"></i>
+            <i class="colorPrimary fas fa-info" id="iconInfo"></i>
             <p > Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
@@ -146,11 +155,11 @@
                                 <h3 >Auberge La cannebière</h3>
                                 <p >Nuit à partir de <b>25€</b></p>
                                 <div>
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
                             </div>
                             
@@ -170,11 +179,11 @@
                                 <h3 >Hôtel du port</h3>
                                 <p >Nuit à partir de 52<b>€</b></p>
                                 <div>
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i>
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i>
                                 </div>
                             </div>
                             
@@ -195,11 +204,11 @@
                                 <h3 >Hôtel Les mouettes</h3>
                                 <p >Nuit à partir de 76<b>€</b></p>
                                 <div>
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
                             </div>
                             
@@ -220,11 +229,11 @@
                                 <h3 >Hôtel de la mer</h3>
                                 <p >Nuit à partir de 46<b>€</b></p>
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
                             </div>
                             
@@ -246,11 +255,11 @@
                                 <h3 >Auberge Le Panier</h3>
                                 <p >Nuit à partir de <b>23€</b></p>
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
                             </div>
                             
@@ -271,11 +280,11 @@
                                 <h3 >Hôtel chez Amina</h3>
                                 <p >Nuit à partir de 96<b>€</b></p>
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
                                 </div>
                             </div>
                             
@@ -322,11 +331,11 @@
                                     <p >Nuit à partir de 128<b>€</b></p>
                                 </div>
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
                                 </div>
                             </div>
     
@@ -354,11 +363,11 @@
                                 </div>
         
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
                             </div>
     
@@ -381,11 +390,11 @@
                                 </div>
 
                                 <div >
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--blue fa-solid fa-star"></i> 
-                                    <i class="star--gray fa-solid fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--blue fas fa-star"></i> 
+                                    <i class="star--gray fas fa-star"></i> 
                                 </div>
 
                             </div>
@@ -488,7 +497,7 @@
                     <a href="#" class="card activity--card activity--card-md">
                         <article class="card--body">
                             <div class="containerImg">
-                                <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"  class="imgHebergement"alt="Photo du parc Longchamp">
+                                <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"  class="imgHebergement" alt="Photo du parc Longchamp">
                             </div>
                             <div class="infoCard">
                                 <h3 >Parc Longchamp</h3>
