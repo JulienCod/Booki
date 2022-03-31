@@ -1,22 +1,10 @@
-:root{
-    --colorPrimary: #0065FC;
-    --colorSecondary: #DEEBFF;
-    --colorTertiary: #F2F2F2;
-    --colorWhite: #FFFFFF;
-    --colorBlack:#000000;
-    /* Radius */
-    --radiusSearch: 15px;
-
-}
-
 /* padding: 29px 20px 50px 20px  */
 
-            /* **************** */
-            /* Version tablette */
-            /* **************** */
+            /* ************** */
+            /* tablet Version */
+            /* ************** */
 
 @media screen and (max-width:991px) and (min-width: 768px) {
-    body{background-color: orange;}
     header{
         padding: 20px 10px 0px 10px;
     }
@@ -24,55 +12,75 @@
     main{
         padding:20px 10px 0px 10px;
     }
-    #groupes-list>h2{
-        margin-right:170px ;
+
+    #title, #form{
+        text-align: center;
     }
-    #groupes-list{
-        gap: 10px;
+    #group-filter{
+        justify-content: center;
     }
+
+    #group-filter>span{
+        width: 100%;
+        text-align: center;
+    }
+
     #filter-list{
         gap: 10px;
-        
     }
+
     .filter>span{
-        margin-right: 3px;
-        padding:13px;
-        font-size: var(--fSh2);
+        margin-right: 2px;
+        padding:7px
     }
+
     #splitSection{
         flex-direction:column-reverse
-
     }
-    #hebergement{
+
+    #accommodation{
         max-width: 100%;
     }
-    .card:hover{
-        transform: scale(1.02);
+
+    #list--pop{
+        align-content: center;
     }
-    #activity{
+
+    #list--pop .card{
+        width: auto;
+    }
+
+    #activities{
         border-radius: 0;
         background-color: var(--colorWhite);
         padding:30px 0px 70px;
         margin-top:10px;
     }
+
     #activity h2{
         padding: 20px 0px;
     }
-    #listActivity{
+
+    #list--activities{
         gap: 30px;
     }
-    .cardActivity{
+
+    .activity--card{
         width: calc(25% - 30px / 4*3)
     }
-    .cardActivity-md{
+
+    .activity--card-md{
         flex: 1 1 calc(60% - 30px * 2);
     }
-    .cardActivity-sm{
+
+    .activity--card-sm{
         flex: 1 1 calc(40% - 30px * 2);
     }
+
     .groupFooter {
         padding: 1% 14% 4% 10px;
     }
+
 }
 
             /* ************** */
@@ -81,27 +89,16 @@
 
 @media screen and (max-width: 767px ) {
 
-    body{
-        border: 1px solid red;
-        
-    }
-
     header{
         padding: 0;
-        border: 1px solid yellow;
     }
 
     main{
         padding: 0;
-        border: 1px solid green;
     }
             /* ****** */
             /* header */
             /* ****** */
-
-    nav, nav>ul>li{
-        width:100%;
-    }
 
     #top{
         display: flex;
@@ -110,9 +107,16 @@
         height: auto;
         padding-top:29px;
     }
+    
+    nav, nav>ul>li{
+        width:100%;
+    }
+    
+    nav>ul{
+        padding:0px;
+    }
 
-    #topNav>li{
-        list-style: none;
+    #topNav li{
         width:100%;
         padding-top: 0px;
         padding-bottom: 14px;
@@ -120,31 +124,20 @@
     }
 
     #topNav>li:hover {
-        border-top: none;
+        border-top:0px;
         border-bottom: 2px solid var(--colorPrimary);
         color:var(--colorPrimary);
         padding-bottom: 12px;
         padding-top: 0px;
     }
 
-    #topNav>li>a:hover {
-        color: var(--colorPrimary);
-    }
 
-    /* ***** */
-    /* main */
-    /* ***** */
+            /* ***** */
+            /* main */
+            /* ***** */
 
     #title{
         padding: 10px 20px 10px 20px;
-    }
-
-    h1{
-        font-size: 22px;
-    }
-
-    p{
-        font-size: 16px;
     }
 
             /* ********** */
@@ -155,6 +148,9 @@
         padding: 10px 20px 10px 20px;
         height: 48px;
     }
+    .fa-location-dot{
+        padding: 15px 17px;
+    }
     
     .iconSearch{
         height: 48px;
@@ -164,8 +160,7 @@
 
     #inputSearch{
         padding-left:70px;
-        width: 100%;
-        height: 48px;
+        width: 95%;
     }
 
             /* ************* */
@@ -178,11 +173,9 @@
         border-top-left-radius: var(--radiusSearch);
         border-bottom-left-radius: var(--radiusSearch);
         width: 48px;
-        height: 48px;
     }
 
     .btnSearch>i{
-        color:var(--colorWhite);
         display: block;
     }
 
@@ -190,88 +183,70 @@
         display: none;
     }
 
-        /* ******************** */
-        /* *****DIV filtre***** */
-        /* ******************** */
+        /* ****************** */
+        /* ***** filter ***** */
+        /* ****************** */
+
     /* #filter-list h2{
         padding-right:100px;
     } */
-    #groupes-list{
+
+    #group-filter{
         padding: 0px 20px;
     }
     #filter-list{
         margin-top: 0px;
     }
     .filter>span{
-        font-weight: bold;
         text-align: center;
         margin-right: 3px;
         padding:8px;
-        font-size: 18px;
     }
 
-                /* **** */
-                /* icon */
-                /* **** */
-                
-    .iconFilter{
-        color: var(--colorPrimary);
-        background-color: var(--colorSecondary);
-        padding:17px ;
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-        margin-left:-5px;
-        margin-top: -2px;
-    }
-
-                /* ******** */
-                /* DIV info */
-                /* ******** */
+                /* ***** */
+                /*  info */
+                /* ***** */
 
     #info{
-    padding: 0px 20px 10px 20px;
-    align-items:baseline;
+    padding: 0px 20px;
     }
+
     #splitSection{
         flex-direction:column-reverse
     }
-    #hebergement{
+    .groupSection{
+        border-radius: 0px;
+    }
+    #accommodation{
         max-width: 100%;
         background-color: var(--colorWhite);
         padding: 20px 3%;
     }
-    .listCard{
+    
+    .list--card{
         flex-direction: column;
-    }
-    #populaire{
-        border-radius: 0;
-        padding: 40px 3%;
-    }
-    .card:hover{
-        transform: scale(1.02);
     }
 
                 /* ******** */
                 /* Activity */
                 /* ******** */
 
-    #activity{
+    #activities{
         border-radius: 0;
         background-color: var(--colorWhite);
         padding:3%;
         margin-top:10px;
     }
-    #activity h2{
+    #activities h2{
         padding: 20px 0px;
     }
-    #listActivity{
+    #list--activities{
         height: auto;
         width: auto;
         padding-bottom: 25px;
     }
     
-    .cardActivity{
+    .activity--card{
         padding:0;
         width: auto;
     }    
