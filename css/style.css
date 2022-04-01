@@ -137,7 +137,7 @@ main{
 
             /* icon */
 
-.fa-location-dot{
+.fa-map-marker-alt{
     position: absolute;
     padding: 17px 19px ;
     border-top-left-radius: var(--radiusSearch);
