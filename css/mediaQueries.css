@@ -13,16 +13,8 @@
         padding:20px 10px 0px 10px;
     }
 
-    #title, #form{
-        text-align: center;
-    }
-    #group-filter{
-        justify-content: center;
-    }
-
     #group-filter>span{
         width: 100%;
-        text-align: center;
     }
 
     #filter-list{
@@ -34,7 +26,7 @@
         padding:7px
     }
 
-    #splitSection{
+    #split-section{
         flex-direction:column-reverse
     }
 
@@ -42,11 +34,7 @@
         max-width: 100%;
     }
 
-    #list--pop{
-        align-content: center;
-    }
-
-    #list--pop .card{
+    #list-pop .card{
         width: auto;
     }
 
@@ -61,23 +49,23 @@
         padding: 20px 0px;
     }
 
-    #list--activities{
+    #list-activities{
         gap: 30px;
     }
 
-    .activity--card{
+    .activity-card{
         width: calc(25% - 30px / 4*3)
     }
 
-    .activity--card-md{
+    .activity-card-md{
         flex: 1 1 calc(60% - 30px * 2);
     }
 
-    .activity--card-sm{
+    .activity-card-sm{
         flex: 1 1 calc(40% - 30px * 2);
     }
 
-    .groupFooter {
+    .group-footer {
         padding: 1% 14% 4% 10px;
     }
 
@@ -116,14 +104,14 @@
         padding:0px;
     }
 
-    #topNav li{
+    #top-nav li{
         width:100%;
         padding-top: 0px;
         padding-bottom: 14px;
         border-bottom: 2px solid var(--colorTertiary);
     }
 
-    #topNav>li:hover {
+    #top-nav>li:hover {
         border-top:0px;
         border-bottom: 2px solid var(--colorPrimary);
         color:var(--colorPrimary);
@@ -131,13 +119,12 @@
         padding-top: 0px;
     }
 
-
             /* ***** */
             /* main */
             /* ***** */
 
     #title{
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px;
     }
 
             /* ********** */
@@ -145,20 +132,14 @@
             /* ********** */
 
     #form{
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px;
         height: 48px;
     }
     .fa-location-dot{
         padding: 15px 17px;
     }
-    
-    .iconSearch{
-        height: 48px;
-        width: 48px;
-        padding: 16px 18px;
-    }
 
-    #inputSearch{
+    #input-search{
         padding-left:70px;
         width: 95%;
     }
@@ -167,7 +148,7 @@
             /* button search */
             /* ************* */
 
-    .btnSearch{
+    .btn-search{
         position:absolute;
         right: 20px;
         border-top-left-radius: var(--radiusSearch);
@@ -175,11 +156,11 @@
         width: 48px;
     }
 
-    .btnSearch>i{
+    .btn-search>i{
         display: block;
     }
 
-    .btnSearch>span{
+    .btn-search>span{
         display: none;
     }
 
@@ -192,7 +173,7 @@
     } */
 
     #group-filter{
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
     #filter-list{
         margin-top: 0px;
@@ -208,22 +189,23 @@
                 /* ***** */
 
     #info{
-    padding: 0px 20px;
+    padding: 0px 10px;
     }
 
-    #splitSection{
+    #split-section{
         flex-direction:column-reverse
     }
-    .groupSection{
+    .group-section{
         border-radius: 0px;
+        padding: 10px;
     }
     #accommodation{
         max-width: 100%;
         background-color: var(--colorWhite);
-        padding: 20px 3%;
+        padding: 20px 10px;
     }
     
-    .list--card{
+    .list-card{
         flex-direction: column;
     }
 
@@ -240,20 +222,20 @@
     #activities h2{
         padding: 20px 0px;
     }
-    #list--activities{
+    #list-activities{
         height: auto;
         width: auto;
         padding-bottom: 25px;
     }
     
-    .activity--card{
+    .activity-card{
         padding:0;
         width: auto;
     }    
     footer{
         flex-direction: column;
     }
-    .groupFooter {
+    .group-footer {
         padding: 1% 14% 4% 3%;
     }
 }
