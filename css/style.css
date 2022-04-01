@@ -88,7 +88,7 @@ header{
 
             /* logo */
 
-#top>img{
+#top img{
     height: 50px;
 }
 
@@ -102,6 +102,7 @@ header{
     list-style: none;    
     width: 140px;
     padding-top: 39px;
+    cursor: pointer;
 }
 
 #top-nav>li:hover{
@@ -172,11 +173,15 @@ main{
     width: 125px;
     height: inherit;
     border: none;
+    cursor: pointer;
 }
 
 .btn-search>i{
     color:var(--colorWhite);
     display: none;
+}
+.btn-search:hover{
+    background-color: #3988ff;
 }
 
             /* ******************* */
@@ -210,6 +215,7 @@ main{
     border-radius: var(--radiusFiltre);
     height: 50px;
     transition: all 100ms ease-in-out;
+    cursor: pointer;
 }
 
 .filter>span{
@@ -246,7 +252,7 @@ main{
 
 #info{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: 20px;
 
 }
@@ -301,6 +307,7 @@ main{
     background-color: var(--colorWhite);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.156);
     transition: all 100ms ease;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -364,6 +371,10 @@ main{
     font-size: var(--fS--l);
     font-weight: var(--fW--b);
     padding: 30px 0px 10px;
+    cursor: pointer;
+}
+#link:hover{
+    color: var(--colorPrimary);
 }
 
             /*      most popular      */
@@ -460,6 +471,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap:10px;
+}
+.group-footer a:hover{
+    text-decoration: underline;
 }
 
             /* ******************** */
