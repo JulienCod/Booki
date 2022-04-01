@@ -61,3 +61,7 @@ préprocesseur CSS (type Sass ou Less) ne doit être utilisé.
 Google Chrome et de Mozilla Firefox. Il faudra tester le prototype sur  
 ces deux navigateurs.  
 ● Il n’est pas nécessaire de versionner le code.  
+
+<img width="1440" alt="Desktop - 1" src="https://user-images.githubusercontent.com/96577156/161285508-f20879ec-918c-4618-a984-7f89defb9d33.png">
+
+<img width="375" alt="iPhone 8 - 1" src="https://user-images.githubusercontent.com/96577156/161285367-d156bd04-6135-4a36-a1ad-1736b64c86f9.png">
