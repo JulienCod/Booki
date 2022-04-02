@@ -225,7 +225,7 @@ main{
 
 .filter:hover{
     background-color: var(--colorSecondary);
-    border: 2px solid var(--colorP);
+    border: 2px solid var(--colorSecondary);
     transform: scale(1.02);
 }
 

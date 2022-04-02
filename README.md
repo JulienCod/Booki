@@ -61,3 +61,4 @@ préprocesseur CSS (type Sass ou Less) ne doit être utilisé.
 Google Chrome et de Mozilla Firefox. Il faudra tester le prototype sur  
 ces deux navigateurs.  
 ● Il n’est pas nécessaire de versionner le code.  
+
