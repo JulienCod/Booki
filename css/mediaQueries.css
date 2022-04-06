@@ -26,7 +26,8 @@
     }
 
     #split-section{
-        flex-direction:column-reverse
+        flex-direction:column-reverse;
+        
     }
 
     #accommodation{
@@ -189,11 +190,12 @@
     }
 
     #split-section{
-        flex-direction:column-reverse
+        flex-direction:column-reverse;
+        gap:0;
     }
     .group-section{
         border-radius: 0px;
-        padding: 10px;
+        padding: 10px 0px 40px;
     }
     #accommodation{
         max-width: 100%;
@@ -233,6 +235,7 @@
 
     footer{
         flex-direction: column;
+        padding: 20px 0px 30px;
     }
 
     .group-footer {
