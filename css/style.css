@@ -1,4 +1,8 @@
-            /* Variable */
+    /* importing font */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    /* Variable */
 
 :root{
     /* Font-size and weight */
@@ -19,8 +23,9 @@
     --colorBlack:#000000;
     
     /* Radius */
+
     --radiusSearch: 15px;
-    --radiusFiltre: 25px;
+    --radiusFilter: 25px;
     --radiusCard: 20px;
 }
 
@@ -212,7 +217,7 @@ main{
     align-items: center;
     border: 2px solid var(--colorTertiary);
     background-color: var(--colorWhite);
-    border-radius: var(--radiusFiltre);
+    border-radius: var(--radiusFilter);
     height: 50px;
     transition: all 100ms ease-in-out;
     cursor: pointer;
