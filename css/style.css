@@ -446,16 +446,18 @@ main{
 
 .activity-card{
     padding:0;
-    width: calc(25% - 40px / 4*3)
+    width: calc(25% - 40px)
 }
 .activity-card-lg{
-    flex: 0 0 100%;
+    flex-basis: 100%;
 }
 .activity-card-md{
-    flex: 1 1 calc(60% - 40px * 2);
+
+    flex: 1 1 calc(60% - 40px);
 }
 .activity-card-sm{
-    flex: 1 1 calc(40% - 40px * 2);
+
+    flex: 1 1 calc(40% - 40px);
 }
 .activity-card .container-img{
     flex:1;
