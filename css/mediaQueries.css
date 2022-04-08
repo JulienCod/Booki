@@ -2,7 +2,7 @@
             /* tablet Version */
             /* ************** */
 
-@media screen and (max-width:992px) and (min-width: 768px) {
+@media screen and (max-width:992px) {
     
     header{
         padding: 20px 10px 0px 10px;
@@ -10,6 +10,13 @@
     
     main{
         padding:20px 10px 0px 10px;
+    }
+    #top-nav>li{  
+        padding-top: 19px;
+    }
+    
+    #top-nav>li:hover{
+        padding-top:17px;
     }
 
     #group-filter>span{
